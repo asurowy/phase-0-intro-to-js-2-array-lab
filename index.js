@@ -21,21 +21,21 @@ console.log(cats);
 //expected output: Array ["Otis", Milo"]
 
 function appendCat(name){
-    var copyOfCatNames= [...cats, "Broom"];
+    let copyOfCatNames= [...cats, "Broom"];
     return copyOfCatNames;
 }
 
 function prependCat(name){
-    var nextName=["Arnold", ...cats];
+    let nextName=["Arnold", ...cats];
     return nextName;
 }
 
 function removeLastCat(){
-    var NewOrder = cats.slice(0,cats.length - 1);
+    let NewOrder = cats.slice(0,cats.length - 1);
     return NewOrder;
   }
 
 function removeFirstCat(){
-    var AnotherNewOrder = cats.slice(1)
+    let AnotherNewOrder = cats.slice(1)
     return AnotherNewOrder;
 }
